@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:wght@100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    --primary: 192 78% 20%; /* 0A4D5E - Deep Teal */
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 192 60% 35%; /* Lighter teal */
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --muted: 192 15% 90%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 24 75% 50%; /* Warm orange/coral as accent */
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 192 78% 20%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 192 70% 30%; /* Slightly brighter teal for dark mode */
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 192 50% 45%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 24 75% 55%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 192 70% 30%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: "Montserrat", sans-serif;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+  }
+  p,
+  span,
+  a,
+  li,
+  div {
+    font-family: "Inter", sans-serif;
+  }
+}
+
+/* Additional styles for prose content */
+.prose h1,
+.prose h2,
+.prose h3,
+.prose h4 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: hsl(var(--primary));
+  margin-top: 1.5em;
+  margin-bottom: 0.75em;
+}
+
+.prose p,
+.prose ul,
+.prose ol {
+  font-family: "Inter", sans-serif;
+  margin-bottom: 1em;
+}
+
+.prose strong {
+  color: hsl(var(--primary));
+  font-weight: 600;
+}
+
+.prose ul {
+  list-style-type: disc;
+  padding-left: 1.5em;
+}
+
+.prose ol {
+  list-style-type: decimal;
+  padding-left: 1.5em;
+}
+
+.prose a {
+  color: hsl(var(--primary));
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.prose a:hover {
+  color: hsl(var(--secondary));
+}
+
