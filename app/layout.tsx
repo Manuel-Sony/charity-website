@@ -5,7 +5,7 @@ import Header from "@/components/header"
 import Footer from "@/components/footer"
 
 export const metadata: Metadata = {
-  title: "Charity Foundation - Making a Difference",
+  title: "Impact Family - Making a Difference",
   description: "Join us in our mission to create positive change and support communities in need around the world.",
 }
 
