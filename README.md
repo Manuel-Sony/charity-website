@@ -29,14 +29,6 @@ npm install
 npm run dev
 ```
 
-### Setting up environment variables (Optional)
-
-If you are using third-party APIs or services (e.g., Stripe for donations), make sure to add your keys to `.env.local`:
-
-```bash
-NEXT_PUBLIC_STRIPE_PUBLIC_KEY=your-public-key
-NEXT_PUBLIC_API_URL=https://api.yourfoundation.com
-```
 
 ## Deployment
 
