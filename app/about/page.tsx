@@ -129,7 +129,7 @@ export default function AboutPage() {
       </section>
 
       {/* Join Us CTA Section */}
-      <section className="w-full py-16 px-4 bg-gradient-to-r from-primary via-accent to-primary text-white">
+      <section className="w-full py-16 px-4 rounded-10 bg-primary flex items-center justify-center text-white mb-5">
         <div className="container mx-auto max-w-6xl text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Join Us in Making a Difference</h2>
           <p className="text-lg max-w-2xl mx-auto mb-8">
