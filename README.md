@@ -23,7 +23,7 @@ A web platform designed for a charity foundation to raise awareness, engage dono
 To run the website locally:
 
 ```bash
-git clone https://github.com/your-username/charity-foundation-website.git
+git clone https://github.com/Manuel-Sony/charity-website
 cd charity-foundation-website
 npm install
 npm run dev
