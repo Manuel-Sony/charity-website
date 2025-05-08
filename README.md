@@ -32,7 +32,7 @@ npm run dev
 
 ## Deployment
 
-The website is deployed on [Vercel](https://vercel.com) for production. You can check out the live demo here: [Live Demo](https://your-site.vercel.app)
+The website is deployed on [Vercel](https://vercel.com) for production. You can check out the live demo here: [Live Demo](https://impact-brown.vercel.app/)
 
 ## Planned Enhancements
 
