@@ -37,7 +37,7 @@ export default function ContactPage() {
               <h3 className="text-xl font-bold mb-3 text-gray-900">Email Us</h3>
               <p className="text-gray-600 mb-4">For general inquiries or information about our programs.</p>
               <a href="mailto:info@charityfoundation.org" className="text-primary hover:underline font-medium">
-                info@charityfoundation.org
+                impactfamilyresponse@gmail.com
               </a>
             </div>
 

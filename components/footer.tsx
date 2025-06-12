@@ -22,7 +22,7 @@ export default function Footer() {
                 <Twitter className="h-5 w-5" />
                 <span className="sr-only">Twitter</span>
               </Link>
-              <Link href="#" className="text-gray-300 hover:text-white transition-colors">
+              <Link href="https://www.instagram.com/impacting_myworld/" className="text-gray-300 hover:text-white transition-colors">
                 <Instagram className="h-5 w-5" />
                 <span className="sr-only">Instagram</span>
               </Link>
@@ -113,7 +113,7 @@ export default function Footer() {
               <li className="flex">
                 <Phone className="h-5 w-5 mr-3 text-gray-300" />
                 <Link href="tel:+2348012345678" className="text-gray-300 hover:text-white transition-colors">
-                  +234 801 234 5678
+                  +234 808 776 9642
                 </Link>
               </li>
               <li className="flex">
@@ -122,7 +122,7 @@ export default function Footer() {
                   href="mailto:info@charityfoundation.org.ng"
                   className="text-gray-300 hover:text-white transition-colors"
                 >
-                  info@charityfoundation.org.ng
+                  impactfamilyresponse@gmail.com
                 </Link>
               </li>
             </ul>

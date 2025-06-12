@@ -5,85 +5,9 @@ import { Progress } from "@/components/ui/progress"
 import { Search, ArrowRight } from "lucide-react"
 import { Input } from "@/components/ui/input"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
+import { metadata, campaigns, categories, sortOptions } from "@/data/campaignData"
 
-export const metadata = {
-  title: "Campaigns - Charity Foundation",
-  description: "Browse and support our ongoing campaigns to help communities in need.",
-}
-
-interface Campaign {
-  id: string
-  title: string
-  description: string
-  image: string
-  raised: number
-  goal: number
-  daysLeft: number
-  category: string
-}
-
-const campaigns: Campaign[] = [
-  {
-    id: "1",
-    title: "Clean Water Initiative",
-    description: "Providing clean water to communities in need across Africa.",
-    image: "/placeholder.svg?height=400&width=600",
-    raised: 15000,
-    goal: 25000,
-    daysLeft: 45,
-    category: "Water",
-  },
-  {
-    id: "2",
-    title: "Education for All",
-    description: "Building schools and providing educational resources for children.",
-    image: "/placeholder.svg?height=400&width=600",
-    raised: 32000,
-    goal: 50000,
-    daysLeft: 30,
-    category: "Education",
-  },
-  {
-    id: "3",
-    title: "Emergency Relief Fund",
-    description: "Supporting communities affected by natural disasters and conflicts.",
-    image: "/placeholder.svg?height=400&width=600",
-    raised: 75000,
-    goal: 100000,
-    daysLeft: 60,
-    category: "Emergency",
-  },
-  {
-    id: "4",
-    title: "Healthcare Access Program",
-    description: "Providing medical care and supplies to underserved communities.",
-    image: "/placeholder.svg?height=400&width=600",
-    raised: 45000,
-    goal: 80000,
-    daysLeft: 75,
-    category: "Health",
-  },
-  {
-    id: "5",
-    title: "Sustainable Agriculture",
-    description: "Teaching sustainable farming practices to rural communities.",
-    image: "/placeholder.svg?height=400&width=600",
-    raised: 28000,
-    goal: 40000,
-    daysLeft: 20,
-    category: "Food",
-  },
-  {
-    id: "6",
-    title: "Women Empowerment Initiative",
-    description: "Supporting women entrepreneurs with training and microloans.",
-    image: "/placeholder.svg?height=400&width=600",
-    raised: 62000,
-    goal: 75000,
-    daysLeft: 15,
-    category: "Empowerment",
-  },
-]
+export { metadata }
 
 export default function CampaignsPage() {
   return (
@@ -96,7 +20,7 @@ export default function CampaignsPage() {
         <div className="container mx-auto max-w-6xl relative z-10 text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">Our Campaigns</h1>
           <p className="text-lg md:text-xl max-w-3xl mx-auto">
-            Browse our ongoing initiatives and help us make a lasting impact in communities around the world.
+            {metadata.description}
           </p>
         </div>
       </section>
@@ -115,24 +39,24 @@ export default function CampaignsPage() {
                   <SelectValue placeholder="Category" />
                 </SelectTrigger>
                 <SelectContent>
-                  <SelectItem value="all">All Categories</SelectItem>
-                  <SelectItem value="water">Water</SelectItem>
-                  <SelectItem value="education">Education</SelectItem>
-                  <SelectItem value="emergency">Emergency</SelectItem>
-                  <SelectItem value="health">Health</SelectItem>
-                  <SelectItem value="food">Food</SelectItem>
-                  <SelectItem value="empowerment">Empowerment</SelectItem>
+                  {categories.map(({ label, value }) => (
+                    <SelectItem key={value} value={value}>
+                      {label}
+                    </SelectItem>
+                  ))}
                 </SelectContent>
               </Select>
+
               <Select>
                 <SelectTrigger className="w-[180px] h-12 rounded-full">
                   <SelectValue placeholder="Sort By" />
                 </SelectTrigger>
                 <SelectContent>
-                  <SelectItem value="newest">Newest</SelectItem>
-                  <SelectItem value="ending-soon">Ending Soon</SelectItem>
-                  <SelectItem value="most-funded">Most Funded</SelectItem>
-                  <SelectItem value="least-funded">Least Funded</SelectItem>
+                  {sortOptions.map(({ label, value }) => (
+                    <SelectItem key={value} value={value}>
+                      {label}
+                    </SelectItem>
+                  ))}
                 </SelectContent>
               </Select>
             </div>
@@ -221,4 +145,3 @@ export default function CampaignsPage() {
     </main>
   )
 }
-
