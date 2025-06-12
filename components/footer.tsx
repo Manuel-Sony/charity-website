@@ -108,7 +108,7 @@ export default function Footer() {
             <ul className="space-y-4">
               <li className="flex">
                 <MapPin className="h-5 w-5 mr-3 text-gray-300" />
-                <span className="text-gray-300">15 Charity Avenue, Lekki, Lagos, Nigeria</span>
+                <span className="text-gray-300">Abuja, Nigeria</span>
               </li>
               <li className="flex">
                 <Phone className="h-5 w-5 mr-3 text-gray-300" />

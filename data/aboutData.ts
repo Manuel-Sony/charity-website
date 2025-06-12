@@ -47,10 +47,10 @@ export const teamSection = {
   title: "Our Leadership Team",
   description: "Meet the dedicated individuals who guide our organization and drive our mission forward.",
   members: [
-    { name: "Sarah Johnson", role: "Executive Director", image: "/placeholder.svg?height=400&width=400" },
-    { name: "Michael Chen", role: "Director of Operations", image: "/placeholder.svg?height=400&width=400" },
-    { name: "Emily Rodriguez", role: "Director of Programs", image: "/placeholder.svg?height=400&width=400" },
-    { name: "David Kim", role: "Director of Development", image: "/placeholder.svg?height=400&width=400" },
+    { name: "Oluwanifemi Ibrahim", role: "Executive Chairman", image: "/images/exec-04.png" },
+    { name: "Samuel Olubunmi", role: "Secretary", image: "/images/exec-03.png" },
+    { name: "Ayegbemoh Daniel", role: "Trustee", image: "/images/exec-02.png" },
+    { name: "Adesina Mark", role: "Trustee", image: "/images/exec-01.png" },
   ],
 }
 
